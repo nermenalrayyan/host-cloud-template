@@ -1,0 +1,154 @@
+/* Start Media Query */
+  /* Start Conteiner */
+  @media (min-width: 576px) {
+    .container, .container-sm {
+      max-width: 540px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .container, .container-sm, .container-md {
+      max-width: 720px;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .container, .container-sm, .container-md, .container-lg {
+      max-width: 960px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .container, .container-sm, .container-md, .container-lg, .container-xl {
+      max-width: 1140px;
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+      max-width: 1320px;
+    }
+  }
+ /* End Conteiner */
+
+
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 21px;
+  }
+
+  .banner .banner-items {
+    padding-top: 70px;
+  }
+
+  .banner form ul {
+    flex-direction: column;
+  }
+
+  .trusted .trusted-items h6 {
+    margin-bottom: 15% !important;
+  }
+
+  .cloud-hosting {
+    background-size: 54em 21.8em;
+  }  
+
+  .cloud-hosting .price-cloud .price {
+    padding: 40px 20px 47px 20px !important;
+    width: 100%;
+  }
+
+  .cloud-hosting .price-cloud .price .info-price {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .cloud-hosting .price-cloud .price {
+    padding: 30.5px;
+  }  
+}
+
+@media screen and (max-width: 517px) {
+  .cloud-features .features-items .item {
+    flex-direction: column;
+  }
+
+  .cloud-features .features-items .item .info {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 574px) {
+  .banner form .search input {
+    width: 100% !important;
+  }
+}
+
+
+@media screen and (max-width: 767px) and (min-width: 321px) {
+  .trusted .trusted-items h6 {
+    margin-bottom: 8% !important;
+  } 
+}
+
+@media screen and (max-width: 767px) {
+  .cloud-features .features-items .item {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 575px) {
+  .banner form .search input {
+    width: 100% !important;
+  }
+}
+
+
+@media screen and (max-width: 991px) {
+  header .right-part {
+    display: none !important;
+  }
+
+  .banner form .search .btn {
+    margin-top: 10px;
+  }
+
+  footer .footer-items .item {
+    width: 216px;
+  }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .banner form .search .btn {
+    padding: .6rem 2.5rem !important;
+  }
+
+  .cloud-hosting .intro-cloud {
+    width: 88%;
+  }
+
+  .cloud-features .features-items .item {
+    width: 82%;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .cloud-hosting .price-cloud .price {
+    margin: 0 0 40px 0 !important;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 768px) {
+  .banner form .search input {
+    width: 70% !important;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 991px) {
+  .banner form .search .btn {
+    padding: 15px 90px !important;
+  }
+}
+/* End Media Query */
