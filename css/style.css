@@ -20,6 +20,24 @@ body, html {
   --box-shadow: 0 0 10px rgb(0 0 0 / 10%);
 }
 
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 43px;
+  align-items: center;
+}
+.menu ul li a {
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 0.6rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  transition: all 0.6s ease;
+}
+.menu ul li:hover a, .menu ul li .active {
+  color: var(--bg-primary);
+}
+
 a {
   text-decoration: none;
   transition: all 0.6s ease;
@@ -123,23 +141,6 @@ header .navbar .right-part {
   display: flex;
   align-items: center;
   gap: 87px;
-}
-header .navbar .right-part ul {
-  list-style: none;
-  display: flex;
-  gap: 43px;
-  align-items: center;
-}
-header .navbar .right-part ul li a {
-  text-transform: capitalize;
-  color: #fff;
-  font-size: 0.6rem;
-  font-weight: 300;
-  letter-spacing: 0.5px;
-  transition: all 0.6s ease;
-}
-header .navbar .right-part ul li:hover a, header .navbar .right-part ul li .active {
-  color: var(--bg-primary);
 }
 header .navbar .btns .btn {
   font-size: 0.5rem;

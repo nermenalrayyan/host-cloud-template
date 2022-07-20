@@ -33,28 +33,6 @@ header {
       display: flex;
       align-items: center;
       gap: 87px;
-
-      ul {
-        list-style: none;
-        display: flex;
-        gap: 43px;
-        align-items: center;
-
-        li {
-          a {
-            text-transform: capitalize;
-            color: #fff;
-            font-size: .6rem;
-            font-weight: 300;
-            letter-spacing: 0.5px;
-            transition: all 0.6s ease;
-          }
-
-          &:hover a, .active {
-            color: var(--bg-primary);
-          }
-        }
-      }
     }
 
     .btns {
