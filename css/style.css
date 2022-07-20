@@ -1,6 +1,5 @@
 html {
   font-size: 25px;
-  scroll-behavior: smooth;
 }
 
 * {
@@ -12,6 +11,8 @@ html {
 
 body, html {
   overflow-x: hidden;
+  line-height: 1.1 !important;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -49,6 +50,8 @@ a, button {
 
 ul {
   list-style: none;
+  padding-left: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 p {
@@ -57,6 +60,7 @@ p {
   text-transform: capitalize;
   line-height: 25px;
   color: #6a6a6a;
+  margin-bottom: 0 !important;
 }
 
 h1 {
@@ -90,35 +94,24 @@ h6 {
   color: var(--bg-primary);
   font-weight: 500;
   text-transform: capitalize;
+  font-size: 0.7rem !important;
 }
 
 .btn {
   transition: all 0.6s ease-in-out;
   text-transform: uppercase;
-  color: #fff;
+  color: #fff !important;
   letter-spacing: 0.5px;
+  border-radius: 0 !important;
 }
 
 .bg-primary {
-  background-color: var(--bg-primary);
+  background-color: var(--bg-primary) !important;
   border: 2px solid var(--bg-primary);
 }
 .bg-primary:hover {
-  background-color: #00a4b9;
+  background-color: #00a4b9 !important;
   border-color: #00a4b9;
-}
-
-.container,
-.container-sm,
-.container-md,
-.container-lg,
-.container-xl,
-.container-xxl {
-  width: 100%;
-  padding-right: 1rem;
-  padding-left: 1rem;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 /* Start Header */
@@ -153,27 +146,15 @@ header .navbar .right-part {
 }
 header .navbar .btns .btn {
   font-size: 0.5rem;
-  padding: 8px 20px;
-  transition: all 0.6s ease-in-out;
-  text-transform: uppercase;
-  color: #fff;
-  letter-spacing: 0.5px;
-}
-header .navbar .btn {
-  font-size: 0.5rem;
-  padding: 8px 20px;
-  transition: all 0.6s ease-in-out;
-  text-transform: uppercase;
-  color: #fff;
-  letter-spacing: 0.5px;
+  padding: 6px 20px;
 }
 header .navbar .bg-secondary {
-  background-color: transparent;
+  background-color: transparent !important;
   border: 2px solid #fff;
 }
 header .navbar .bg-secondary:hover {
-  color: var(--bg-primary);
-  background-color: #fff;
+  color: var(--bg-primary) !important;
+  background-color: #fff !important;
 }
 header .navbar .bg-primary {
   margin-left: 10px;
@@ -239,7 +220,7 @@ header .navbar .bg-primary {
   font-weight: 100;
 }
 .banner .banner-items form .search .btn {
-  padding: 13px 16px;
+  padding: 11px 16px;
   font-size: 0.6rem;
   font-weight: 500;
 }
@@ -281,6 +262,7 @@ header .navbar .bg-primary {
 .trusted .trusted-items h6 {
   margin-bottom: 3%;
   text-transform: uppercase;
+  color: black;
 }
 .trusted .trusted-items .imgs-trusted img {
   margin: 2% 5%;
@@ -560,26 +542,6 @@ footer .copyright p {
 /* End Footer */
 /* Start Media Query */
 /* Start Conteiner */
-@media (min-width: 768px) {
-  .container, .container-sm, .container-md {
-    max-width: 720px;
-  }
-}
-@media (min-width: 992px) {
-  .container, .container-sm, .container-md, .container-lg {
-    max-width: 960px;
-  }
-}
-@media (min-width: 1200px) {
-  .container, .container-sm, .container-md, .container-lg, .container-xl {
-    max-width: 1140px;
-  }
-}
-@media (min-width: 1400px) {
-  .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
-    max-width: 1320px;
-  }
-}
 /* End Conteiner */
 @media screen and (max-width: 320px) {
   html {
