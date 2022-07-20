@@ -90,14 +90,10 @@ header {
     height: 125vh;
     width: 100%;
 
-    h2 {
+    h1 {
       text-transform: uppercase;
-      text-align: center;
-      color: #fff;
-      font-size: 1.3rem;
       margin-bottom: 47px;
       margin-top: 6px;
-      font-weight: 600;
     }
 
     form {
@@ -255,7 +251,7 @@ header {
     padding-top: 65px;
     margin: 0 auto;
 
-    h3 {
+    h2 {
       font-size: 32px;
     }
 
@@ -264,7 +260,7 @@ header {
       font-size: .6rem;
     }
 
-    h3, p {
+    h2, p {
       color: #fbfbfb;
     }
   }

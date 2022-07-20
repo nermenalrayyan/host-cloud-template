@@ -59,14 +59,15 @@ p {
   color: #6a6a6a;
 }
 
-h2 {
+h1 {
+  text-transform: capitalize;
   text-align: center;
   color: #fff;
   font-size: 1.3rem;
   font-weight: 600;
 }
 
-h3 {
+h2 {
   font-weight: bold;
   text-transform: capitalize;
   padding: 15px 0;
@@ -187,14 +188,10 @@ header .navbar .bg-primary {
   height: 125vh;
   width: 100%;
 }
-.banner .banner-items h2 {
+.banner .banner-items h1 {
   text-transform: uppercase;
-  text-align: center;
-  color: #fff;
-  font-size: 1.3rem;
   margin-bottom: 47px;
   margin-top: 6px;
-  font-weight: 600;
 }
 .banner .banner-items form {
   width: 100%;
@@ -331,14 +328,14 @@ header .navbar .bg-primary {
   padding-top: 65px;
   margin: 0 auto;
 }
-.cloud-hosting .intro-cloud h3 {
+.cloud-hosting .intro-cloud h2 {
   font-size: 32px;
 }
 .cloud-hosting .intro-cloud p {
   font-weight: 400;
   font-size: 0.6rem;
 }
-.cloud-hosting .intro-cloud h3, .cloud-hosting .intro-cloud p {
+.cloud-hosting .intro-cloud h2, .cloud-hosting .intro-cloud p {
   color: #fbfbfb;
 }
 .cloud-hosting .price-cloud {
@@ -569,11 +566,6 @@ footer .copyright p {
 /* End Footer */
 /* Start Media Query */
 /* Start Conteiner */
-@media (min-width: 576px) {
-  .container, .container-sm {
-    max-width: 540px;
-  }
-}
 @media (min-width: 768px) {
   .container, .container-sm, .container-md {
     max-width: 720px;
@@ -648,11 +640,6 @@ footer .copyright p {
     width: 100%;
   }
 }
-@media screen and (max-width: 767px) and (min-width: 575px) {
-  .banner form .search input {
-    width: 100% !important;
-  }
-}
 @media screen and (max-width: 991px) {
   header .right-part {
     display: none !important;
@@ -680,12 +667,12 @@ footer .copyright p {
     margin: 0 0 40px 0 !important;
   }
 }
-@media screen and (max-width: 1200px) and (min-width: 768px) {
+@media screen and (max-width: 1200px) and (min-width: 575px) {
   .banner form .search input {
-    width: 70% !important;
+    width: 79% !important;
   }
 }
-@media screen and (max-width: 1200px) and (min-width: 991px) {
+@media screen and (max-width: 1200px) and (min-width: 425px) {
   .banner form .search .btn {
     padding: 15px 90px !important;
   }
