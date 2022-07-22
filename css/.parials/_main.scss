@@ -63,36 +63,36 @@ header {
 
 /* Start Banner */
 .banner {
-  width: 100%;
+  // width: 100%;
   background-image: url(../images/banner-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 
   .banner-items {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
     height: 125vh;
-    width: 100%;
+    // width: 100%;
 
-    h1 {
-      text-transform: uppercase;
+    h2 {
+      // text-transform: uppercase;
       margin-bottom: 47px;
       margin-top: 6px;
     }
 
     form {
-      width: 100%;
-      text-align: center;
+      // width: 100%;
+      // text-align: center;
 
       .search {
-        display: flex;
-        flex-wrap: wrap;
+        // display: flex;
+        // flex-wrap: wrap;
         gap: 18px;
-        justify-content: center;
-        align-items: center;
+        // justify-content: center;
+        // align-items: center;
         transition: all .6s ease;
 
         input {
@@ -111,19 +111,19 @@ header {
         }
 
         .btn {
-          padding: 11px 16px;
+          padding: 11px 17px;
           font-size: .6rem;
           font-weight: 500;
         }
       }
 
       ul {
-        display: flex;
+        // display: flex;
         gap: 25px;
         margin-top: 25px;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
+        // flex-wrap: wrap;
+        // align-items: center;
+        // justify-content: center;
 
         li {
           color:#fff;
@@ -155,14 +155,14 @@ header {
 /* Start Trusted */
 .trusted {
   padding: 2rem 0 1rem 0;
-  background-color: #f7f7f7;
+  background-color: var(--color-gray);
 
   .trusted-items {
-    text-align: center;
+    // text-align: center;
 
     h6 {
       margin-bottom: 3%;
-      text-transform: uppercase;
+      font-size: 0.7rem !important;
       color: black;
     }
 
@@ -195,7 +195,7 @@ header {
     flex-wrap: wrap;
 
     li {
-      background-color:#f7f7f7;
+      background-color: var(--color-gray);
       padding: 50px 30px;
       text-align: center;
       border-radius: 2%;
@@ -234,12 +234,12 @@ header {
   margin: 170px 0;
 
   .intro-cloud {
-    width: 74%;
-    text-align: center;
+    // width: 74%;
+    // text-align: center;
     padding-top: 65px;
-    margin: 0 auto;
+    // margin: 0 auto;
 
-    h2 {
+    h3 {
       font-size: 32px;
     }
 
@@ -248,31 +248,31 @@ header {
       // font-size: .6rem;
     }
 
-    h2, p {
+    h3, p {
       color: #fbfbfb;
     }
   }
 
   .price-cloud {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: center;
     gap: 30px;
     margin-top: 84px;
 
     .price {
-      position: relative;
-      text-align: center;
+      // position: relative;
+      // text-align: center;
       box-shadow: var(--box-shadow);
-      background-color: white;
+      // background-color: white;
       padding: 46.5px;
 
       .info-price {
-        text-align: center;
+        // text-align: center;
         width: 250px;
 
         h5 {
-          text-transform: uppercase;
+          // text-transform: uppercase;
           margin: 5px 0 40px 0;
         }
 
@@ -282,10 +282,10 @@ header {
           font-size: 31px;
 
           span {
-            display: block;
+            // display: block;
             font-size: 14px;
             margin-top: 5px;
-            text-transform: uppercase;
+            // text-transform: uppercase;
           }
         }
 
@@ -348,26 +348,26 @@ header {
 .cloud-features {
   margin-top: 10%;
 
-  .intro-features {
-    text-align: center;
+  // .intro-features {
+  //   // text-align: center;
 
-    // h6 {
-    //   color: var(--bg-primary);
-    // }
-  }
+  //   // h6 {
+  //   //   color: var(--bg-primary);
+  //   // }
+  // }
 
   .features-items {
-    display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
+    // display: flex;
+    gap: 36px;
+    // flex-wrap: wrap;
     margin-top: 55px;
-    justify-content: center;
+    // justify-content: center;
 
     .item {
-      display: flex;
+      // display: flex;
       gap: 33.3px;
-      align-items: center;
-      background-color: white;
+      // align-items: center;
+      // background-color: white;
       box-shadow: var(--box-shadow);
       padding: 30px;
       width: 48%;
@@ -381,7 +381,7 @@ header {
         width: 79.3%;
 
         h5 {
-          text-transform: capitalize;
+          // text-transform: capitalize;
           margin: 5px 0 10px 0;
         }
       }
@@ -391,12 +391,136 @@ header {
 /* End Cloud Features */
 
 
+// Start heading
+.heading {
+  background-image: url(../images/heading-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  .heading-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 505px;
+
+    h1 {
+      margin: 50px 0 26px 0;
+    }
+
+    .link-home {
+
+      text-transform: capitalize;
+      color: #d3ccf5 !important;
+      font-size: 0.6rem;
+      font-weight: 100;
+
+
+      a {
+        color: #fff !important;
+        font-weight: 300;
+      }
+
+      span {
+        margin: 0 5px;
+      }
+    }
+  }
+}
+// End heading
+
+
+// Start Our Company
+.our-company {
+  padding: 150px 0;
+  background-color: var(--color-gray);
+
+  .company-items {
+    gap: 90px;
+
+    .left-item {
+
+      h6 {
+        margin-bottom: 0;
+      }
+
+      h3 {
+        padding: 15px 0 5px 0;
+      }
+
+      .links-info {
+        gap: 40px;
+        font-size: 0.7rem;
+        font-weight: 600;
+        text-transform: capitalize;
+        border-top: 3px solid #eee;
+        margin: 40px 0;
+        padding-top: 40px;
+
+        a {
+          color: black;
+        }
+        
+        .active {
+          color: var(--bg-primary);
+        }
+      }
+
+      p {
+        font-size: .5rem !important;
+        font-weight: 400 !important;
+        letter-spacing: .5px;
+      }
+    }
+  }
+}
+// End Our Company
+
+
+// Start
+.our-team {
+  margin-top: 145px;
+
+  .team-items {
+
+    p {
+      width: 648px;
+    }
+    
+    .team-cards {
+      gap: 30px;
+      margin-top: 83px;
+
+      .team {
+        background-color: var(--color-gray);
+        transition: all .5s ease;
+
+        &:hover {
+          opacity: .8;
+        }
+
+        img {  
+          width: 347px;
+        }
+
+        h5 {
+          font-size: 19px !important;
+          font-weight: 600;
+          margin: 30px 0;
+        }
+      }
+    }
+  }
+}
+// End
+
 /* Start Testimonials */
 .testimonials {
   text-align: center;
   margin-top: 165px;
-  background-color: #f7f7f7;
-  padding: 110px 0;
+  background-color: var(--color-gray);
+  padding: 115px 0;
 
   .intro-testimonials {
 
