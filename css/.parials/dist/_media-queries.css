@@ -112,6 +112,11 @@
     margin: 0 0 40px 0 !important;
   }
 }
+@media (max-width: 1200px) {
+  .contact-us form {
+    margin-bottom: 60px;
+  }
+}
 @media (min-width: 1200px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl {
     max-width: 1148px !important;

@@ -374,11 +374,11 @@ header .navbar .menu .btns .bg-primary {
 }
 
 .contact-us .contact-items {
-  gap: 4%;
+  gap: 7.3%;
   padding: 155px 0;
 }
 .contact-us .contact-items form {
-  width: 47.5% !important;
+  width: 509px !important;
 }
 .contact-us .contact-items form input {
   border: 1px solid #ccc;
@@ -402,14 +402,13 @@ header .navbar .menu .btns .bg-primary {
   width: fit-content;
 }
 .contact-us .contact-items .info-contact {
-  width: 48.5% !important;
+  width: 520px;
 }
 .contact-us .contact-items .info-contact p {
   font-weight: 400;
 }
 .contact-us .contact-items .info-contact ul {
   gap: 30px 25px;
-  width: 520px;
   border-top: 3px solid #eee;
   padding-top: 40px;
   margin-top: 40px;

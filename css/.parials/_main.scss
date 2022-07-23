@@ -549,11 +549,12 @@ header {
 // Start Contact Us
 .contact-us {
   .contact-items {    
-    gap: 4%;
+    gap: 7.3%;
     padding: 155px 0;
 
     form {
-      width: 47.5% !important;
+      // width: 47.5% !important;
+      width: 509px !important;
 
       input {
         // width: 51%;
@@ -568,6 +569,7 @@ header {
 
       input, textarea {
         width: 100%;
+
         margin-bottom: 30px;
         // padding: 6px 10px 14px 15px;
         // width: 120%;
@@ -588,17 +590,19 @@ header {
     }
 
     .info-contact {
-      width: 48.5% !important;
+      width: 520px;
+
+      // width: 48.5% !important;
 
 
       p {
         font-weight: 400;
+        // width: 445px;
       }
 
     
       ul {
         gap: 30px 25px;
-        width: 520px;
         border-top: 3px solid #eee;
         padding-top: 40px;
         margin-top: 40px;
