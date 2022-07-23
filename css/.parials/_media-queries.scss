@@ -110,9 +110,15 @@
 
 
 @media screen and (max-width: 991px) {
-  header {  
+  header {
+
+    .navbar {
+      flex-direction: column !important;
+      justify-content: center;
+
+    }
     .menu {
-      display: none !important;
+      display: block !important;
     }
   }
 

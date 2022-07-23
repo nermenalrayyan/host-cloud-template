@@ -1,142 +1,3 @@
-html {
-  font-size: 25px;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  font-family: "Roboto", sans-serif;
-}
-
-body, html {
-  overflow-x: hidden;
-  line-height: 1.1 !important;
-  scroll-behavior: smooth;
-}
-
-:root {
-  --bg-secondary: linear-gradient(145deg, rgba(114,2,187,1) 0%, rgba(50,100,245,1) 100%);
-  --bg-primary: #00bcd4;
-  --box-shadow: 0 0 10px rgb(0 0 0 / 10%);
-  --gray: #f7f7f7;
-}
-
-a {
-  text-decoration: none;
-  transition: all 0.6s ease;
-}
-
-a, button {
-  cursor: pointer;
-}
-
-ul {
-  list-style: none;
-  padding-left: 0 !important;
-  margin-bottom: 0 !important;
-}
-
-.icon {
-  color: #fff;
-  background-color: var(--bg-primary);
-  padding: 35px;
-  font-size: 125%;
-  border-radius: 50%;
-}
-
-p {
-  font-size: 0.6rem;
-  font-weight: 300;
-  text-transform: capitalize;
-  line-height: 25px;
-  color: #6a6a6a;
-  margin-bottom: 0 !important;
-}
-
-h1 {
-  font-size: 1.8rem;
-  color: #fff;
-  text-transform: capitalize;
-  font-weight: 600;
-}
-
-h2 {
-  text-transform: capitalize;
-  text-align: center;
-  color: #fff;
-  font-size: 1.3rem;
-  font-weight: 600;
-}
-
-h3 {
-  font-weight: bold;
-  text-transform: capitalize;
-  padding: 15px 0;
-  font-size: 120%;
-}
-
-h5 {
-  font-size: 20px;
-  text-transform: capitalize;
-}
-h5 span {
-  display: block;
-  color: var(--bg-primary);
-  font-size: 15px;
-  font-weight: 400;
-  margin-top: 10px;
-}
-
-h6 {
-  color: var(--bg-primary);
-  font-weight: 500;
-  text-transform: capitalize;
-  font-size: 0.6rem !important;
-}
-
-.btn {
-  transition: all 0.6s ease-in-out;
-  text-transform: uppercase;
-  color: #fff !important;
-  letter-spacing: 0.5px;
-  border-radius: 0 !important;
-}
-
-form input, form textarea {
-  padding: 6px 10px 14px 15px;
-  outline: none;
-}
-form input::-moz-placeholder, form textarea::-moz-placeholder {
-  font-size: 0.6rem;
-  letter-spacing: 0.5px;
-  font-weight: 100;
-}
-form input:-ms-input-placeholder, form textarea:-ms-input-placeholder {
-  font-size: 0.6rem;
-  letter-spacing: 0.5px;
-  font-weight: 100;
-}
-form input::placeholder, form textarea::placeholder {
-  font-size: 0.6rem;
-  letter-spacing: 0.5px;
-  font-weight: 100;
-}
-form .btn {
-  padding: 11px 17px;
-  font-size: 0.6rem;
-  font-weight: 500;
-}
-
-.bg-primary {
-  background-color: var(--bg-primary) !important;
-  border: 2px solid var(--bg-primary);
-}
-.bg-primary:hover {
-  background-color: #00a4b9 !important;
-  border-color: #00a4b9;
-}
-
 /* Start Header */
 header {
   background: transparent;
@@ -223,12 +84,6 @@ header .navbar .menu .btns .bg-primary {
   background-color: transparent;
   width: 51%;
   border: 1px solid #fff;
-}
-.banner .banner-items form .search input::-moz-placeholder {
-  color: #fff;
-}
-.banner .banner-items form .search input:-ms-input-placeholder {
-  color: #fff;
 }
 .banner .banner-items form .search input::placeholder {
   color: #fff;
@@ -383,7 +238,7 @@ header .navbar .menu .btns .bg-primary {
   background: var(--bg-secondary);
 }
 .cloud-hosting .price-cloud .price:nth-of-type(2) button:hover {
-  background: linear-gradient(145deg, rgb(50, 100, 245) 0%, rgb(114, 2, 187) 100%);
+  background: linear-gradient(145deg, #3264f5 0%, #7202bb 100%);
 }
 
 /* End Cloud Hosting */
@@ -527,27 +382,13 @@ header .navbar .menu .btns .bg-primary {
   width: 120%;
   border: 1px solid #ddd;
 }
-.contact-us .contact-items form input::-moz-placeholder, .contact-us .contact-items form textarea::-moz-placeholder {
-  text-transform: capitalize;
-  font-weight: 500;
-  font-size: 14px;
-  color: rgb(116, 115, 115);
-}
-.contact-us .contact-items form input:-ms-input-placeholder, .contact-us .contact-items form textarea:-ms-input-placeholder {
-  text-transform: capitalize;
-  font-weight: 500;
-  font-size: 14px;
-  color: rgb(116, 115, 115);
-}
 .contact-us .contact-items form input::placeholder, .contact-us .contact-items form textarea::placeholder {
   text-transform: capitalize;
   font-weight: 500;
   font-size: 14px;
-  color: rgb(116, 115, 115);
+  color: #747373;
 }
 .contact-us .contact-items form .btn {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
 }
 .contact-us .contact-items .info-contact {
@@ -677,125 +518,3 @@ footer .copyright p {
 }
 
 /* End Footer */
-@media screen and (max-width: 320px) {
-  html {
-    font-size: 21px;
-  }
-  .banner .banner-items {
-    padding-top: 70px;
-  }
-  .banner ul {
-    flex-direction: column;
-  }
-  .trusted h6 {
-    margin-bottom: 15% !important;
-  }
-  .cloud-hosting {
-    background-size: 54em 21.8em;
-  }
-  .cloud-hosting .price {
-    padding: 40px 20px 47px 20px !important;
-    width: 100%;
-  }
-  .cloud-hosting .price .info-price {
-    width: 100% !important;
-  }
-  footer p {
-    width: 100% !important;
-  }
-}
-@media screen and (max-width: 375px) {
-  .cloud-hosting .price {
-    padding: 30.5px;
-  }
-}
-@media screen and (max-width: 517px) {
-  .cloud-features .item {
-    flex-direction: column;
-  }
-  .cloud-features .info {
-    text-align: center;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 574px) {
-  .banner input {
-    width: 100% !important;
-  }
-  .our-company img {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 767px) and (min-width: 321px) {
-  .trusted h6 {
-    margin-bottom: 8% !important;
-  }
-}
-@media screen and (max-width: 767px) {
-  .banner ul {
-    text-align: center;
-  }
-  .cloud-features .item {
-    width: 100% !important;
-  }
-}
-@media screen and (max-width: 767px) {
-  .our-company .left-item {
-    width: 100% !important;
-  }
-}
-@media screen and (max-width: 991px) {
-  header .navbar {
-    flex-direction: column !important;
-    justify-content: center;
-  }
-  header .menu {
-    display: block !important;
-  }
-  .banner .btn {
-    margin-top: 10px;
-  }
-  footer .item {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 991px) and (min-width: 768px) {
-  .banner .btn {
-    padding: 0.6rem 2.5rem !important;
-  }
-  .cloud-hosting .intro-cloud {
-    width: 88%;
-  }
-  .cloud-features .item {
-    width: 82% !important;
-  }
-  .our-company .left-item {
-    width: 77% !important;
-  }
-}
-@media screen and (max-width: 1199px) {
-  .cloud-hosting .price {
-    margin: 0 0 40px 0 !important;
-  }
-}
-@media screen and (max-width: 1200px) and (min-width: 992px) {
-  .our-company .left-item {
-    width: 57% !important;
-  }
-}
-@media screen and (max-width: 1200px) and (min-width: 425px) {
-  .banner .btn {
-    padding: 15px 90px !important;
-  }
-}
-@media screen and (max-width: 1200px) and (min-width: 575px) {
-  .banner input {
-    width: 79% !important;
-  }
-}
-:root {
-  --bg-secondary: linear-gradient(145deg, rgba(114,2,187,1) 0%, rgba(50,100,245,1) 100%);
-  --bg-primary: #00bcd4;
-  --box-shadow: 0 0 10px rgb(0 0 0 / 10%);
-  --color-gray: #f7f7f7;
-}/*# sourceMappingURL=style.css.map */

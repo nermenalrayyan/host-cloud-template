@@ -106,46 +106,36 @@ header {
     }
 
     form {
-      // width: 100%;
-      // text-align: center;
 
       .search {
-        // display: flex;
-        // flex-wrap: wrap;
         gap: 18px;
-        // justify-content: center;
-        // align-items: center;
         transition: all .6s ease;
 
         input {
           background-color: transparent;
-          padding: 6px 10px 14px 15px;
+          // padding: 6px 10px 14px 15px;
           width: 51%;
           border: 1px solid #fff;
-          outline: none;
+          // outline: none;
 
           &::placeholder {
             color: #fff;
-            font-size: 0.6rem;
-            letter-spacing: 0.5px;
-            font-weight: 100;
+            // font-size: 0.6rem;
+            // letter-spacing: 0.5px;
+            // font-weight: 100;
           }
         }
 
-        .btn {
-          padding: 11px 17px;
-          font-size: .6rem;
-          font-weight: 500;
-        }
+        // .btn {
+        //   padding: 11px 17px;
+        //   font-size: .6rem;
+        //   font-weight: 500;
+        // }
       }
 
       ul {
-        // display: flex;
         gap: 25px;
         margin-top: 25px;
-        // flex-wrap: wrap;
-        // align-items: center;
-        // justify-content: center;
 
         li {
           color:#fff;
@@ -227,13 +217,13 @@ header {
       border-radius: 2%;
       width: 338px;
 
-      i {
-        color: #fff;
-        background-color: var(--bg-primary);
-        padding: 35px;
-        font-size: 125%;
-        border-radius: 50%;
-      }
+      // i {
+      //   color: #fff;
+      //   background-color: var(--bg-primary);
+      //   padding: 35px;
+      //   font-size: 125%;
+      //   border-radius: 50%;
+      // }
 
       h5 {
         font-weight: 500;
@@ -507,7 +497,7 @@ header {
 // End Our Company
 
 
-// Start
+// Start Our Team
 .our-team {
   margin-top: 145px;
 
@@ -544,7 +534,77 @@ header {
     }
   }
 }
-// End
+// End Our Team
+
+
+// Start Contact Us
+.contact-us {
+  .contact-items {    
+    gap: 147px;
+    padding: 160px 0;
+
+    form {
+      width: 45%;
+
+      input {
+        margin-bottom: 30px;
+        // width: 51%;
+        border: 1px solid #ccc;
+        // outline: none;
+      }
+
+      textarea {
+        padding-top: 15px;
+      }
+
+      input, textarea {
+        // padding: 6px 10px 14px 15px;
+        // width: 120%;
+        border: 1px solid #ddd;
+        // outline: none;
+
+        &::placeholder {
+          text-transform: capitalize;
+          font-weight: 500;
+          font-size: 14px;
+          color: rgb(116, 115, 115);
+        }
+      }
+
+      .btn {
+        width: fit-content;
+      }
+    }
+
+    .info-contact {
+      width: 50%;
+
+      p {
+        width: 92%;
+      }
+
+    
+      ul {
+        gap: 30px 0;
+        width: 97%;
+
+        li {
+          width: 265px;
+
+          .icon{
+            padding: 20px;
+            font-size: 100%;
+          }
+
+          span {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+// End Contact Us
 
 /* Start Testimonials */
 .testimonials {
