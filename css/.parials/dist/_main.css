@@ -12,12 +12,15 @@ header .navbar {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding: 20px 0;
+  padding: 20px 0 24px 0;
+}
+header .navbar .logo {
+  padding-top: 3px;
 }
 header .navbar .logo a {
   color: #fff;
   text-transform: uppercase;
-  font-size: 0.9rem;
+  font-size: 24px;
   font-weight: 600;
 }
 header .navbar .logo a span {
@@ -31,16 +34,17 @@ header .navbar .menu {
 header .navbar .menu ul {
   list-style: none;
   display: flex;
-  gap: 43px;
+  gap: 47px;
   align-items: center;
 }
 header .navbar .menu ul li a {
   text-transform: capitalize;
   color: #fff;
-  font-size: 0.6rem;
+  font-size: 14px;
   font-weight: 300;
   letter-spacing: 1px;
   transition: all 0.6s ease;
+  line-height: 22px;
 }
 header .navbar .menu ul li:hover a, header .navbar .menu ul li .active {
   color: var(--bg-primary);
@@ -58,7 +62,7 @@ header .navbar .menu .btns .bg-secondary:hover {
   background-color: #fff !important;
 }
 header .navbar .menu .btns .bg-primary {
-  margin-left: 10px;
+  margin-left: 8px;
 }
 
 /* End Header */
@@ -73,11 +77,11 @@ header .navbar .menu .btns .bg-primary {
   height: 125vh;
 }
 .banner .banner-items h2 {
-  margin-bottom: 47px;
-  margin-top: 6px;
+  margin: 6px 0 50px 0;
+  letter-spacing: 1px;
 }
 .banner .banner-items form .search {
-  gap: 18px;
+  gap: 20px;
   transition: all 0.6s ease;
 }
 .banner .banner-items form .search input {
@@ -89,17 +93,18 @@ header .navbar .menu .btns .bg-primary {
   color: #fff;
 }
 .banner .banner-items form ul {
-  gap: 25px;
-  margin-top: 25px;
+  gap: 24px;
+  margin: 26px 14px 0 5px;
 }
 .banner .banner-items form ul li {
   color: #fff;
+  margin-left: 10px;
 }
 .banner .banner-items form ul li input[type=checkbox] {
   width: 18px;
   min-width: 18px;
   height: 18px;
-  margin-right: 5px;
+  margin-right: 1.6px;
 }
 .banner .banner-items form ul li label {
   font-weight: 600;
@@ -107,7 +112,7 @@ header .navbar .menu .btns .bg-primary {
 }
 .banner .banner-items form ul li label span {
   font-weight: 400;
-  font-size: 0.7rem;
+  font-size: 16px;
 }
 
 /* End Banner */
@@ -283,21 +288,25 @@ header .navbar .menu .btns .bg-primary {
   height: 505px;
 }
 .heading .heading-items h1 {
-  margin: 50px 0 26px 0;
+  margin: 50px 0 23px 0;
 }
 .heading .heading-items .link-home {
   text-transform: capitalize;
-  color: #d3ccf5 !important;
-  font-size: 0.6rem;
-  font-weight: 100;
+  font-weight: 400;
+  letter-spacing: 0.3px;
 }
 .heading .heading-items .link-home a {
-  color: #fff !important;
-  font-weight: 300;
   line-height: 20px;
+  margin-right: 5px;
 }
 .heading .heading-items .link-home span {
-  margin: 0 5px;
+  margin-left: 5px;
+  font-size: 14px;
+  color: #d3ccf5;
+}
+.heading .heading-items .link-home, .heading .heading-items a {
+  color: #fff;
+  font-size: 15px;
 }
 
 .our-company {
@@ -314,7 +323,7 @@ header .navbar .menu .btns .bg-primary {
   margin-bottom: 0;
 }
 .our-company .company-items .left-item h3 {
-  padding: 15px 0 5px 0;
+  padding-top: 15px;
 }
 .our-company .company-items .left-item .links-info {
   gap: 40px;
@@ -365,21 +374,22 @@ header .navbar .menu .btns .bg-primary {
 }
 
 .contact-us .contact-items {
-  gap: 147px;
-  padding: 160px 0;
+  gap: 4%;
+  padding: 155px 0;
 }
 .contact-us .contact-items form {
-  width: 45%;
+  width: 47.5% !important;
 }
 .contact-us .contact-items form input {
-  margin-bottom: 30px;
   border: 1px solid #ccc;
 }
 .contact-us .contact-items form textarea {
   padding-top: 15px;
+  resize: none;
 }
 .contact-us .contact-items form input, .contact-us .contact-items form textarea {
-  width: 120%;
+  width: 100%;
+  margin-bottom: 30px;
   border: 1px solid #ddd;
 }
 .contact-us .contact-items form input::placeholder, .contact-us .contact-items form textarea::placeholder {
@@ -392,24 +402,30 @@ header .navbar .menu .btns .bg-primary {
   width: fit-content;
 }
 .contact-us .contact-items .info-contact {
-  width: 50%;
+  width: 48.5% !important;
 }
 .contact-us .contact-items .info-contact p {
-  width: 92%;
+  font-weight: 400;
 }
 .contact-us .contact-items .info-contact ul {
-  gap: 30px 0;
-  width: 97%;
+  gap: 30px 25px;
+  width: 520px;
+  border-top: 3px solid #eee;
+  padding-top: 40px;
+  margin-top: 40px;
 }
 .contact-us .contact-items .info-contact ul li {
-  width: 265px;
+  width: 247.1px;
 }
 .contact-us .contact-items .info-contact ul li .icon {
-  padding: 20px;
+  padding: 18px;
   font-size: 100%;
+  margin-right: 13px;
 }
 .contact-us .contact-items .info-contact ul li span {
   font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
 }
 
 /* Start Testimonials */

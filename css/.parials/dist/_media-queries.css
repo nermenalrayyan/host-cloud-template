@@ -1,0 +1,134 @@
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 21px;
+  }
+
+  .banner .banner-items {
+    padding-top: 70px;
+  }
+
+  .banner ul {
+    flex-direction: column;
+  }
+
+  .trusted h6 {
+    margin-bottom: 15% !important;
+  }
+
+  .cloud-hosting {
+    background-size: 54em 21.8em;
+  }
+  .cloud-hosting .price {
+    padding: 40px 20px 47px 20px !important;
+    width: 100%;
+  }
+  .cloud-hosting .price .info-price {
+    width: 100% !important;
+  }
+
+  footer p {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 375px) {
+  .cloud-hosting .price {
+    padding: 30.5px;
+  }
+}
+@media screen and (max-width: 517px) {
+  .cloud-features .item {
+    flex-direction: column;
+  }
+
+  .cloud-features .info {
+    text-align: center;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 574px) {
+  .banner input {
+    width: 100% !important;
+  }
+
+  .our-company img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) and (min-width: 321px) {
+  .trusted h6 {
+    margin-bottom: 8% !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .banner ul {
+    text-align: center;
+  }
+
+  .cloud-features .item {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .our-company .left-item {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  header .navbar {
+    flex-direction: column !important;
+    justify-content: center;
+  }
+  header .menu {
+    display: block !important;
+  }
+
+  .banner .btn {
+    margin-top: 10px;
+  }
+
+  footer .item {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .banner .btn {
+    padding: 0.6rem 2.5rem !important;
+  }
+
+  .cloud-hosting .intro-cloud {
+    width: 88%;
+  }
+
+  .cloud-features .item {
+    width: 82% !important;
+  }
+
+  .our-company .left-item {
+    width: 77% !important;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .cloud-hosting .price {
+    margin: 0 0 40px 0 !important;
+  }
+}
+@media (min-width: 1200px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1148px !important;
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+  .our-company .left-item {
+    width: 57% !important;
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: 425px) {
+  .banner .btn {
+    padding: 15px 90px !important;
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: 575px) {
+  .banner input {
+    width: 79% !important;
+  }
+}

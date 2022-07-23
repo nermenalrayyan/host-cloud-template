@@ -55,17 +55,18 @@ p {
 }
 
 h1 {
-  font-size: 1.8rem;
+  font-size: 44px;
   color: #fff;
   text-transform: capitalize;
   font-weight: 600;
+  letter-spacing: 1px;
 }
 
 h2 {
   text-transform: capitalize;
   text-align: center;
   color: #fff;
-  font-size: 1.3rem;
+  font-size: 32px;
   // margin-bottom: 47px;
   // margin-top: 6px;
   font-weight: 600;
@@ -74,7 +75,8 @@ h2 {
 h3 {
   font-weight: bold;
   text-transform: capitalize;
-  padding: 15px 0;
+  // padding: 15px 0;
+  padding: 5px 0;
   // font-size: 33px;
   font-size: 120%;
 }
@@ -111,14 +113,14 @@ form {
 
   input, textarea {
     // background-color: transparent;
-    padding: 6px 10px 14px 15px;
+    padding: 5px 11px 13px 15px;
     // width: 51%;
     // border: 1px solid #fff;
     outline: none;
 
     &::placeholder {
       // color: #fff;
-      font-size: 0.6rem;
+      font-size: 14px;
       letter-spacing: 0.5px;
       font-weight: 100;
     }

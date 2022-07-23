@@ -169,6 +169,13 @@
   }
 }
 
+@media (min-width: 1200px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1148px !important;
+  }
+}
+
+
 @media screen and (max-width: 1200px) and (min-width: 992px) {
   .our-company {
     .left-item {
