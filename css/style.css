@@ -22,24 +22,6 @@ body, html {
   --gray: #f7f7f7;
 }
 
-.menu ul {
-  list-style: none;
-  display: flex;
-  gap: 43px;
-  align-items: center;
-}
-.menu ul li a {
-  text-transform: capitalize;
-  color: #fff;
-  font-size: 0.6rem;
-  font-weight: 300;
-  letter-spacing: 0.5px;
-  transition: all 0.6s ease;
-}
-.menu ul li:hover a, .menu ul li .active {
-  color: var(--bg-primary);
-}
-
 a {
   text-decoration: none;
   transition: all 0.6s ease;
@@ -65,7 +47,7 @@ p {
 }
 
 h1 {
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   color: #fff;
   text-transform: capitalize;
   font-weight: 600;
@@ -87,7 +69,7 @@ h3 {
 }
 
 h5 {
-  font-size: 17px;
+  font-size: 20px;
   text-transform: capitalize;
 }
 h5 span {
@@ -147,24 +129,41 @@ header .navbar .logo a {
 header .navbar .logo a span {
   font-size: medium;
 }
-header .navbar .right-part {
+header .navbar .menu {
   display: flex;
   align-items: center;
   gap: 87px;
 }
-header .navbar .btns .btn {
+header .navbar .menu ul {
+  list-style: none;
+  display: flex;
+  gap: 43px;
+  align-items: center;
+}
+header .navbar .menu ul li a {
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 0.6rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  transition: all 0.6s ease;
+}
+header .navbar .menu ul li:hover a, header .navbar .menu ul li .active {
+  color: var(--bg-primary);
+}
+header .navbar .menu .btns .btn {
   font-size: 0.5rem;
   padding: 6px 20px;
 }
-header .navbar .bg-secondary {
+header .navbar .menu .btns .bg-secondary {
   background-color: transparent !important;
   border: 2px solid #fff;
 }
-header .navbar .bg-secondary:hover {
+header .navbar .menu .btns .bg-secondary:hover {
   color: var(--bg-primary) !important;
   background-color: #fff !important;
 }
-header .navbar .bg-primary {
+header .navbar .menu .btns .bg-primary {
   margin-left: 10px;
 }
 
@@ -259,6 +258,12 @@ header .navbar .bg-primary {
 .services .hosting-services {
   margin: 143px 0 80px 0;
 }
+.services .hosting-services h3 {
+  padding: 5px 0;
+}
+.services .hosting-services p {
+  font-weight: 400;
+}
 .services ul {
   display: flex;
   gap: 38px;
@@ -320,6 +325,7 @@ header .navbar .bg-primary {
 }
 .cloud-hosting .price-cloud .price .info-price h5 {
   margin: 5px 0 40px 0;
+  font-size: 17px;
 }
 .cloud-hosting .price-cloud .price .info-price h4 {
   padding: 30px 0;
@@ -408,6 +414,7 @@ header .navbar .bg-primary {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   height: 505px;
 }
 .heading .heading-items h1 {
@@ -422,6 +429,7 @@ header .navbar .bg-primary {
 .heading .heading-items .link-home a {
   color: #fff !important;
   font-weight: 300;
+  line-height: 20px;
 }
 .heading .heading-items .link-home span {
   margin: 0 5px;
@@ -665,7 +673,7 @@ footer .copyright p {
   }
 }
 @media screen and (max-width: 991px) {
-  header .right-part {
+  header .menu {
     display: none !important;
   }
   .banner .btn {
