@@ -83,7 +83,7 @@ h3 {
   font-weight: bold;
   text-transform: capitalize;
   padding: 15px 0;
-  font-size: 33px;
+  font-size: 120%;
 }
 
 h5 {
@@ -434,6 +434,9 @@ header .navbar .bg-primary {
 .our-company .company-items {
   gap: 90px;
 }
+.our-company .company-items .left-item {
+  width: 40%;
+}
 .our-company .company-items .left-item h6 {
   margin-bottom: 0;
 }
@@ -465,7 +468,7 @@ header .navbar .bg-primary {
   margin-top: 145px;
 }
 .our-team .team-items p {
-  width: 648px;
+  width: 60%;
 }
 .our-team .team-items .team-cards {
   gap: 30px;
@@ -474,12 +477,13 @@ header .navbar .bg-primary {
 .our-team .team-items .team-cards .team {
   background-color: var(--color-gray);
   transition: all 0.5s ease;
+  width: 347px;
 }
 .our-team .team-items .team-cards .team:hover {
   opacity: 0.8;
 }
 .our-team .team-items .team-cards .team img {
-  width: 347px;
+  width: 100%;
 }
 .our-team .team-items .team-cards .team h5 {
   font-size: 19px !important;
@@ -593,9 +597,6 @@ footer .copyright p {
 }
 
 /* End Footer */
-/* Start Media Query */
-/* Start Conteiner */
-/* End Conteiner */
 @media screen and (max-width: 320px) {
   html {
     font-size: 21px;
@@ -603,90 +604,111 @@ footer .copyright p {
   .banner .banner-items {
     padding-top: 70px;
   }
-  .banner form ul {
+  .banner ul {
     flex-direction: column;
   }
-  .trusted .trusted-items h6 {
+  .trusted h6 {
     margin-bottom: 15% !important;
   }
   .cloud-hosting {
     background-size: 54em 21.8em;
   }
-  .cloud-hosting .price-cloud .price {
+  .cloud-hosting .price {
     padding: 40px 20px 47px 20px !important;
     width: 100%;
   }
-  .cloud-hosting .price-cloud .price .info-price {
-    width: 100%;
+  .cloud-hosting .price .info-price {
+    width: 100% !important;
+  }
+  footer p {
+    width: 100% !important;
   }
 }
 @media screen and (max-width: 375px) {
-  .cloud-hosting .price-cloud .price {
+  .cloud-hosting .price {
     padding: 30.5px;
   }
 }
 @media screen and (max-width: 517px) {
-  .cloud-features .features-items .item {
+  .cloud-features .item {
     flex-direction: column;
   }
-  .cloud-features .features-items .item .info {
+  .cloud-features .info {
     text-align: center;
     width: 100%;
   }
 }
 @media screen and (max-width: 574px) {
-  .banner form .search input {
+  .banner input {
     width: 100% !important;
+  }
+  .our-company img {
+    width: 100%;
   }
 }
 @media screen and (max-width: 767px) and (min-width: 321px) {
-  .trusted .trusted-items h6 {
+  .trusted h6 {
     margin-bottom: 8% !important;
   }
 }
 @media screen and (max-width: 767px) {
-  .cloud-features .features-items .item {
-    width: 100%;
+  .banner ul {
+    text-align: center;
+  }
+  .cloud-features .item {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .our-company .left-item {
+    width: 100% !important;
   }
 }
 @media screen and (max-width: 991px) {
   header .right-part {
     display: none !important;
   }
-  .banner form .search .btn {
+  .banner .btn {
     margin-top: 10px;
   }
-  footer .footer-items .item {
-    width: 216px;
+  footer .item {
+    width: 100%;
   }
 }
 @media screen and (max-width: 991px) and (min-width: 768px) {
-  .banner form .search .btn {
+  .banner .btn {
     padding: 0.6rem 2.5rem !important;
   }
   .cloud-hosting .intro-cloud {
     width: 88%;
   }
-  .cloud-features .features-items .item {
-    width: 82%;
+  .cloud-features .item {
+    width: 82% !important;
+  }
+  .our-company .left-item {
+    width: 77% !important;
   }
 }
 @media screen and (max-width: 1199px) {
-  .cloud-hosting .price-cloud .price {
+  .cloud-hosting .price {
     margin: 0 0 40px 0 !important;
   }
 }
-@media screen and (max-width: 1200px) and (min-width: 575px) {
-  .banner form .search input {
-    width: 79% !important;
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+  .our-company .left-item {
+    width: 57% !important;
   }
 }
 @media screen and (max-width: 1200px) and (min-width: 425px) {
-  .banner form .search .btn {
+  .banner .btn {
     padding: 15px 90px !important;
   }
 }
-/* End Media Query */
+@media screen and (max-width: 1200px) and (min-width: 575px) {
+  .banner input {
+    width: 79% !important;
+  }
+}
 :root {
   --bg-secondary: linear-gradient(145deg, rgba(114,2,187,1) 0%, rgba(50,100,245,1) 100%);
   --bg-primary: #00bcd4;

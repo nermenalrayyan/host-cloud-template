@@ -439,7 +439,8 @@ header {
   .company-items {
     gap: 90px;
 
-    .left-item {
+    .left-item { 
+    width: 40%;
 
       h6 {
         margin-bottom: 0;
@@ -485,7 +486,7 @@ header {
   .team-items {
 
     p {
-      width: 648px;
+      width: 60%;
     }
     
     .team-cards {
@@ -495,13 +496,15 @@ header {
       .team {
         background-color: var(--color-gray);
         transition: all .5s ease;
+        width: 347px;
+        // width: 31%;
 
         &:hover {
           opacity: .8;
         }
 
         img {  
-          width: 347px;
+          width: 100%;
         }
 
         h5 {
