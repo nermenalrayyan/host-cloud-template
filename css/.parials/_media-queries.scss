@@ -49,6 +49,14 @@
   }
 }
 
+@media screen and (max-width: 388px) {
+  .banner {
+    li {
+      width: 115px;
+    }
+  }
+} 
+
 @media screen and (max-width: 517px) {
   .cloud-features {   
     .item {
@@ -85,6 +93,14 @@
     } 
   }
 }
+
+@media screen and (max-width: 767px) and (min-width: 389px) {
+  .banner {
+    li {
+      width: 144px;
+    }
+  }
+}  
 
 @media screen and (max-width: 767px) {
   .banner {

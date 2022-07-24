@@ -34,12 +34,16 @@ header {
       display: flex;
       align-items: center;
       gap: 87px;
+      // order: 2;
+
 
       ul {
         list-style: none;
         display: flex;
         gap: 47px;
         align-items: center;
+        // order: 3;
+
       
         li {
           // line-height: 11px;
@@ -59,27 +63,28 @@ header {
           }
         }
       }
+    }
 
-      .btns {
+    .btns {
+      // order: 4;
 
-        .btn {
-          font-size: 0.5rem;
-          padding: 6px 20px;
-        }
+      .btn {
+        font-size: 0.5rem;
+        padding: 6px 20px;
+      }
 
-        .bg-secondary {
-          background-color: transparent !important;
-          border: 2px solid #fff;
-    
-          &:hover {
-            color: var(--bg-primary) !important;
-            background-color: #fff !important;
-          }
+      .bg-secondary {
+        background-color: transparent !important;
+        border: 2px solid #fff;
+  
+        &:hover {
+          color: var(--bg-primary) !important;
+          background-color: #fff !important;
         }
-    
-        .bg-primary {
-          margin-left: 8px;
-        }
+      }
+  
+      .bg-primary {
+        margin-left: 8px;
       }
     }
   }
@@ -144,6 +149,8 @@ header {
         li {
           color:#fff;
           margin-left: 10px;
+          text-align: center;
+          
 
           input[type=checkbox] {
             width: 18px;

@@ -49,19 +49,19 @@ header .navbar .menu ul li a {
 header .navbar .menu ul li:hover a, header .navbar .menu ul li .active {
   color: var(--bg-primary);
 }
-header .navbar .menu .btns .btn {
+header .navbar .btns .btn {
   font-size: 0.5rem;
   padding: 6px 20px;
 }
-header .navbar .menu .btns .bg-secondary {
+header .navbar .btns .bg-secondary {
   background-color: transparent !important;
   border: 2px solid #fff;
 }
-header .navbar .menu .btns .bg-secondary:hover {
+header .navbar .btns .bg-secondary:hover {
   color: var(--bg-primary) !important;
   background-color: #fff !important;
 }
-header .navbar .menu .btns .bg-primary {
+header .navbar .btns .bg-primary {
   margin-left: 8px;
 }
 
@@ -99,6 +99,7 @@ header .navbar .menu .btns .bg-primary {
 .banner .banner-items form ul li {
   color: #fff;
   margin-left: 10px;
+  text-align: center;
 }
 .banner .banner-items form ul li input[type=checkbox] {
   width: 18px;

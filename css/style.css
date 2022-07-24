@@ -189,19 +189,19 @@ header .navbar .menu ul li a {
 header .navbar .menu ul li:hover a, header .navbar .menu ul li .active {
   color: var(--bg-primary);
 }
-header .navbar .menu .btns .btn {
+header .navbar .btns .btn {
   font-size: 0.5rem;
   padding: 6px 20px;
 }
-header .navbar .menu .btns .bg-secondary {
+header .navbar .btns .bg-secondary {
   background-color: transparent !important;
   border: 2px solid #fff;
 }
-header .navbar .menu .btns .bg-secondary:hover {
+header .navbar .btns .bg-secondary:hover {
   color: var(--bg-primary) !important;
   background-color: #fff !important;
 }
-header .navbar .menu .btns .bg-primary {
+header .navbar .btns .bg-primary {
   margin-left: 8px;
 }
 
@@ -245,6 +245,7 @@ header .navbar .menu .btns .bg-primary {
 .banner .banner-items form ul li {
   color: #fff;
   margin-left: 10px;
+  text-align: center;
 }
 .banner .banner-items form ul li input[type=checkbox] {
   width: 18px;
@@ -725,6 +726,11 @@ footer .copyright p {
     padding: 30.5px;
   }
 }
+@media screen and (max-width: 388px) {
+  .banner li {
+    width: 115px;
+  }
+}
 @media screen and (max-width: 517px) {
   .cloud-features .item {
     flex-direction: column;
@@ -745,6 +751,11 @@ footer .copyright p {
 @media screen and (max-width: 767px) and (min-width: 321px) {
   .trusted h6 {
     margin-bottom: 8% !important;
+  }
+}
+@media screen and (max-width: 767px) and (min-width: 389px) {
+  .banner li {
+    width: 144px;
   }
 }
 @media screen and (max-width: 767px) {
