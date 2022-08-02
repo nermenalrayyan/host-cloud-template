@@ -8,14 +8,14 @@ header {
   transition: all 0.5s ease;
 }
 header .navbar {
-  display: flex;
   justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
   padding: 20px 0 24px 0;
+  max-width: 1170px !important;
+  margin: 0 auto !important;
 }
 header .navbar .logo {
-  padding-top: 3px;
+  margin: 3px 0 0 30px;
 }
 header .navbar .logo a {
   color: #fff;
@@ -26,32 +26,13 @@ header .navbar .logo a {
 header .navbar .logo a span {
   font-size: medium;
 }
-header .navbar .menu {
-  display: flex;
-  align-items: center;
-  gap: 87px;
-}
-header .navbar .menu ul {
-  list-style: none;
-  display: flex;
-  gap: 47px;
-  align-items: center;
-}
-header .navbar .menu ul li a {
-  text-transform: capitalize;
-  color: #fff;
-  font-size: 14px;
-  font-weight: 300;
-  letter-spacing: 1px;
-  transition: all 0.6s ease;
-  line-height: 22px;
-}
-header .navbar .menu ul li:hover a, header .navbar .menu ul li .active {
-  color: var(--bg-primary);
+header .navbar .btns {
+  margin-right: 30px;
 }
 header .navbar .btns .btn {
   font-size: 0.5rem;
   padding: 6px 20px;
+  height: 35px;
 }
 header .navbar .btns .bg-secondary {
   background-color: transparent !important;
@@ -63,6 +44,26 @@ header .navbar .btns .bg-secondary:hover {
 }
 header .navbar .btns .bg-primary {
   margin-left: 8px;
+}
+header .navbar .navLinks {
+  display: flex;
+  gap: 47px;
+  margin: 5px 0 0 202px;
+}
+header .navbar .navLinks a {
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  transition: all 0.6s ease;
+  line-height: 22px;
+}
+header .navbar .navLinks a:hover, header .navbar .navLinks .active {
+  color: var(--bg-primary);
+}
+header .navbar .toggleMenu {
+  display: none;
 }
 
 /* End Header */

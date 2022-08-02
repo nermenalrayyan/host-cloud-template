@@ -3,10 +3,6 @@
     font-size: 21px;
   }
 
-  .banner .banner-items {
-    padding-top: 70px;
-  }
-
   .banner ul {
     flex-direction: column;
   }
@@ -30,6 +26,11 @@
     width: 100% !important;
   }
 }
+@media screen and (max-width: 330px) {
+  .banner .banner-items {
+    padding-top: 177px;
+  }
+}
 @media screen and (max-width: 375px) {
   .cloud-hosting .price {
     padding: 30.5px;
@@ -40,6 +41,33 @@
     width: 115px;
   }
 }
+@media screen and (max-width: 465px) {
+  header .btns {
+    order: 2 !important;
+    display: none !important;
+    width: 100%;
+  }
+  header .btns.active {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-white);
+    position: absolute;
+    top: 313px;
+    z-index: 900;
+    height: 58px;
+  }
+  header .btns.active .btn:first-of-type {
+    border: 2px solid var(--bg-primary);
+    color: var(--bg-primary) !important;
+  }
+  header .btns.active .btn:first-of-type:hover {
+    background-color: var(--color-gray) !important;
+  }
+  header .toggleMenu {
+    order: 1 !important;
+  }
+}
 @media screen and (max-width: 517px) {
   .cloud-features .item {
     flex-direction: column;
@@ -48,6 +76,11 @@
   .cloud-features .info {
     text-align: center;
     width: 100%;
+  }
+}
+@media screen and (max-width: 530px) {
+  header .btns {
+    margin-right: 0 !important;
   }
 }
 @media screen and (max-width: 574px) {
@@ -83,13 +116,141 @@
     width: 100% !important;
   }
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 991px) and (min-width: 531px) {
   header .navbar {
-    flex-direction: column !important;
+    position: relative;
+  }
+  header .navbar .navLinks {
+    display: none;
+    margin: auto !important;
+    order: 3;
+  }
+  header .navbar .navLinks.active {
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0 !important;
+    position: absolute;
+    top: 81px;
+    z-index: 900;
+    padding: 0 10px;
+  }
+  header .navbar .navLinks.active a {
+    color: #151414;
+    height: 58px;
+    border-bottom: 1px solid #f1eeee;
+    display: flex;
+    align-items: center;
     justify-content: center;
   }
-  header .menu {
-    display: block !important;
+  header .navbar .navLinks.active a.active {
+    color: var(--bg-primary);
+  }
+  header .navbar .btns {
+    margin-right: 24px;
+    order: 1;
+    display: block;
+  }
+  header .navbar .toggleMenu {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    background-color: var(--color-white);
+    order: 2;
+    height: 36px;
+    width: 56px;
+  }
+  header .navbar .toggleMenu span {
+    display: inline-block;
+    background: #2ac3d6;
+    height: 3px;
+    width: 15px;
+    position: relative;
+  }
+  header .navbar .toggleMenu span::before, header .navbar .toggleMenu span::after {
+    display: inline-block;
+    position: absolute;
+    content: "";
+    background: #2ac3d6;
+    height: 3px;
+    width: 15px;
+  }
+  header .navbar .toggleMenu span::before {
+    top: 5px;
+  }
+  header .navbar .toggleMenu span::after {
+    top: -5px;
+  }
+}
+@media screen and (max-width: 991px) {
+  header .navbar {
+    position: relative;
+  }
+  header .navbar .navLinks {
+    display: none;
+    margin: auto !important;
+    order: 3;
+  }
+  header .navbar .navLinks.active {
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0 !important;
+    position: absolute;
+    top: 81px;
+    z-index: 900;
+    padding: 0 10px;
+  }
+  header .navbar .navLinks.active a {
+    color: #151414;
+    height: 58px;
+    border-bottom: 1px solid #f1eeee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header .navbar .navLinks.active a.active {
+    color: var(--bg-primary);
+  }
+  header .navbar .btns {
+    margin-right: 24px;
+    order: 1;
+    display: block;
+  }
+  header .navbar .toggleMenu {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    background-color: var(--color-white);
+    order: 2;
+    height: 36px;
+    width: 56px;
+    transition: all 0.6s ease;
+  }
+  header .navbar .toggleMenu span {
+    display: inline-block;
+    background: #2ac3d6;
+    height: 3px;
+    width: 15px;
+    position: relative;
+  }
+  header .navbar .toggleMenu span::before, header .navbar .toggleMenu span::after {
+    display: inline-block;
+    position: absolute;
+    content: "";
+    background: #2ac3d6;
+    height: 3px;
+    width: 15px;
+  }
+  header .navbar .toggleMenu span::before {
+    top: 5px;
+  }
+  header .navbar .toggleMenu span::after {
+    top: -5px;
   }
 
   .banner .btn {
@@ -115,6 +276,14 @@
 
   .our-company .left-item {
     width: 77% !important;
+  }
+}
+@media screen and (max-width: 1199px) {
+  header .navbar {
+    max-width: 990px !important;
+  }
+  header .navbar .navLinks {
+    margin: 5px 0 0 40px;
   }
 }
 @media screen and (max-width: 1199px) {
